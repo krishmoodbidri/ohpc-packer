@@ -2,14 +2,15 @@
   "builders": [{
 	  "type": "openstack",
 	  "source_image_name": "CentOS-7-x86_64-GenericCloud-1905",
-	  "networks": ["a70b32fd-e920-4f74-8dcf-e4a5ed33dbe9", "f1db21a7-51ce-4f92-b007-e43d7774b6d2"], 
-	  "image_name": "ohpc",
-          "image_members": ["46c01a921a7342e8858ca0f68cc99fc6"],
+	  "networks": ["07b9b96e-7cb2-4fb0-8e9e-f13243ecbbd1", "7e9ff58f-09f8-45fb-b81d-31c7940e5351"], 
+	  "instance_name": "ood",
+	  "image_name": "ood_1",          
+	  "image_members": ["46c01a921a7342e8858ca0f68cc99fc6"],
           "image_visibility": "shared",
-	  "ssh_username": "centos",
-	  "ssh_keypair_name": "jpr-laptop",
-	  "ssh_private_key_file": "~/.ssh/id_rsa",
-	  "ssh_host": "164.111.161.143",
+          "ssh_username": "centos",
+          "ssh_keypair_name": "key_name",
+          "ssh_private_key_file": "~/.ssh/id_rsa",
+          "ssh_host": "164.111.161.132",
 	  "reuse_ips": true,
 	  "ssh_username": "centos",
 	  "flavor": "m1.medium"
@@ -36,7 +37,7 @@
    {
     "type": "shell",
     "inline": [
-      "sudo ansible-playbook -c local -i /CRI_XCBC/hosts -l `hostname -s` /CRI_XCBC/site.yaml -b"
+      "sudo ansible-playbook -c local -i /CRI_XCBC/hosts -l `hostname -s` /CRI_XCBC/ood.yaml -b"
     ]
    }
   ]
