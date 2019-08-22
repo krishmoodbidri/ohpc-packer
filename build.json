@@ -2,15 +2,15 @@
   "builders": [{
 	  "type": "openstack",
 	  "source_image_name": "CentOS-7-x86_64-GenericCloud-1905",
-	  "networks": ["07b9b96e-7cb2-4fb0-8e9e-f13243ecbbd1", "7e9ff58f-09f8-45fb-b81d-31c7940e5351"], 
+	  "networks": ["37728287-77d2-4359-aaaa-814829ff6ab9", "79a69df0-0c38-41b5-9452-025d5baf9b94"],
 	  "instance_name": "ood",
-	  "image_name": "ood_1",          
+	  "image_name": "ood_8",          
 	  "image_members": ["46c01a921a7342e8858ca0f68cc99fc6"],
           "image_visibility": "shared",
           "ssh_username": "centos",
           "ssh_keypair_name": "key_name",
           "ssh_private_key_file": "~/.ssh/id_rsa",
-          "ssh_host": "164.111.161.132",
+          "ssh_host": "164.111.161.168",
 	  "reuse_ips": true,
 	  "ssh_username": "centos",
 	  "flavor": "m1.medium"
