@@ -13,7 +13,7 @@ host_prefix = "164.111.161.{}"
 
 var = {
     'build_instance_name': 'compute',
-    'build_version': '1',
+    'build_version': '2',
     'source_image_name': 'CentOS-7-x86_64-GenericCloud-1905',
     'private_key_file': '~/.ssh/id_rsa',
     'ssh_username': 'centos',
