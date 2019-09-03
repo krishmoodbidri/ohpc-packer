@@ -2,12 +2,12 @@
 	"source_image_name": "CentOS-7-x86_64-GenericCloud-1905",
 	"external-net-ID": "2a118d60-17dc-475f-8ef0-665bfb1dca6c",
 	"internal-net-ID": "ae12b0c2-9ae8-47ba-aace-8f34047d9bd1",
-	"instance_floating_ip_net-ID": "2a118d60-17dc-475f-8ef0-665bfb1dca6c", 
+        "instance_floating_ip_net-ID": "ae12b0c2-9ae8-47ba-aace-8f34047d9bd1", 
 	"build_instance_name": "ood",
 	"img_build_version":"0.1",
 	"ssh_username": "centos",
 	"ssh_keypair_name": "key_name",
 	"private_key_file-path": "~/.ssh/id_rsa",
-	"ssh_host-IP": "164.111.161.138",
+	"ssh_host-IP": "164.111.161.150",
 	"flavor": "m1.medium"
 }
